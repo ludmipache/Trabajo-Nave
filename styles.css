@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+:root{
+    --color-primario-700: #360C72;
+    --color-primario-500: #652BDF;
+    --color-primario-400: #E4D7FF;
+    --color-primario-300: #BEBEBE;
+    --color-primario-200: #E4D7FF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-size: 100%;
+    max-width: 2000px;
+}
+
+body{
+    min-height: 100%;
+}
+
+ul,ol,a{
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    position: sticky;
+    top: 10px;
+}
+
+.header{
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e7eaed;
+    display: flex;
+    justify-content: center;
+    padding: 0 32px;
+}
+
+.content-conteiner{
+    margin: 0 auto;
+    position: sticky;
+    margin: 0px 56px;
+    width: 100%;
+    max-width: 1020x;
+    height: 80px;
+}
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header_logo-conteiner{
+    height: 40px;
+    width: auto;
+}
+
+.header-LogoNave-Mobile{
+    display: none;
+}
+
+.header-nave-list{
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+
+.header-nave-list-2{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 6px 24px;
+    margin: 0 4px;
+}
+
+.header-nave-list-2:hover{
+    cursor: pointer;
+    background-color: var(--color-primario-400);
+    color: var(--color-primario-700);
+}
+
+.header-actions{
+    display: flex;
+    margin:  0px 0px 0px 31.5px;
+}
+
+.btn-primary, .btn-secondary, .header-nave-list-2, .bi-circle-fill{
+    border-radius: 50px;
+}
+
+.btn-menu{
+    display: none;
+}
+
+
+.btn-secondary{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 24px;
+    margin: 0 4px;
+    background-color: #fff;
+    color: #652BDF;
+    border: 1px solid #652bdf;
+    font-size: 14px;
+}
+
+.btn-secondary:hover{
+    cursor: pointer;
+    background-color: var(--color-primario-400);
+    color: var(--color-primario-700);
+    border: 1px solid #360C72;
+}
+
+.btn-primary{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 24px;
+    margin: 0 4px;
+    border: 0.800px;
+    background-color: #652BDF;
+    color: #fff;
+}
+
+.btn-primary:hover{
+    cursor: pointer;
+    background-color: var(--color-primario-400);
+    color: var(--color-primario-700);
+    border: 1px solid #360C72;
+}
+
+.div-separator{
+    width: 100%;
+    height: 50px;
+    margin: 20px;
+}
+
+body h2 {
+    font-weight: 600;
+    letter-spacing: -.045em;
+    margin: 8px 0;
+    font-size: 40px;
+    line-height: 2.625rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div-principal{
+    margin: 0;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1135px;
+    height: 200px;
+}
+
+.div-baner{
+    border-radius: 24px;
+    overflow: hidden;
+    padding: 32px;
+    position: relative;
+}
+
+.section-baner {
+    width: 100%;
+    padding: 40px 24px;
+}
+
+.baner-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    border-radius: 32px;
+    overflow: hidden;
+    background-image: url("./imagenes/Galicia-Baner-1-PGN.png");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.baner-content {
+    max-width: 520px;
+    padding: 48px;
+    color: white;
+}
+
+.baner-content h1 {
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.baner-content p {
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.btn-primary-baner{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    background-color: #652bdf;
+    color: #fff;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+
+.btn-primary-baner:hover{
+    cursor: pointer;
+    background-color: #360C72;
+    text-box: #fff;
+}
+
+.icon-div{
+    margin-top: 22px;
+    margin-bottom: 22px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .3s;
+    margin: 0px 28px;
+}
+
+.bi-circle-fill{
+    color: #BEBEBE;
+    margin: 0px 12px;
+    width: 16px;
+    height: 16px;
+}
+
+.bi-circle-fill:hover{
+    color: #652BDF;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #000;
+}
+
+.div-principal-h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 400px;
+}
+
+.div-separator-card{
+    width: 100%;
+    height: 32px;
+    
+}
+
+.div-card{
+    max-width: 80px;
+    margin: 0 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 14px;
+    gap: 32px;
+    grid-gap: 16px;
+    margin: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+body h3 {
+font-size: 24px;
+}
+
+.div-card-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-card-content-text{
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+
+.card-icon{
+    height: 50px;
+    gap: 16px;
+    display: flex;
+}
+
+
+.bi-cash-stack, 
+.bi-graph-up, 
+.bi-gear{
+    color: #652BDF;
+    height: 20px;
+    width: 24px;
+    font-size: 24px;
+    padding: 19px;
+    background-color: #F0EAFC;
+    border-radius: 4px;
+    text-align: start;
+}
+
+.section-minibaner{
+    width: 100%;
+    max-width: 1020px;
+    height: 120px;
+    padding: 24px 40px;
+    background-color: #360C72;
+    gap: 28px;
+    border-radius: 40px;
+    left: 70px;
+}
+
+.section-minibaner-text{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.button-minibaner{
+    display: flex;
+    flex-direction: column-reverse;
+    ;
+    padding: 10px 32px;
+    border-radius: 32px;
+    text-align: right;
+    color: #652BDF;
+    font-size: 16px;
+}
+
+.button-minibaner:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+
+.card-img{
+    transition:
+        transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-img:hover{
+    transform: translateY(-4px);
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.div-content-right{
+padding: 24px;
+display: flex;
+gap: 23px;
+justify-content: center;
+}
+
+.div-content-right-text{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 400px;
+    gap: 40px;
+}
+
+.div-content-left{
+    padding: 24px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.div-content-left-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    width: 400px;
+    gap: 40px;
+}
+
+.LogoNave-Mobile{
+    height: 45px;
+    width: 40px;
+    margin: initial;
+}
+
+.footer{
+    padding: 24px;
+}
+
+.footer-toplinks{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+.footer-toplinks-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1190px;
+    
+}
+
+.footer-logo-nave{
+    display: flex;
+    flex-direction: row;
+    
+}
+.footer-title{
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
+
+li{
+    margin: 8px 0;
+}
+
+
+/*320px hasta 2000px de ancho*/
+
+@media screen and (max-width:988px){
+    .header-nav{ display: none; } 
+
+    .btn-menu{cursor: pointer;
+    position: absolute;
+    left: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+    .header-LogoNave-Mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-minibaner{
+        height: auto;
+    }
+
+    .div-content-right{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-content-left{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-toplinks{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 24px;
+        grid-row-gap: 8px;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    
+}
